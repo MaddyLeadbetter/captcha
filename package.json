@@ -2,6 +2,7 @@
   "name": "captcha-purgatory",
   "private": true,
   "type": "module",
+  "homepage": "https://maddyleadbetter.github.io/captcha",
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
