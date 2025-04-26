@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "captcha-purgatory",
   "private": true,
   "type": "module",
   "scripts": {
@@ -14,7 +14,9 @@
     "isbot": "^5.1.17",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router": "^7.5.2"
+    "react-icons": "^5.5.0",
+    "react-router": "^7.5.2",
+    "tailwind-merge": "^3.2.0"
   },
   "devDependencies": {
     "@react-router/dev": "^7.5.2",
