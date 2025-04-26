@@ -8,6 +8,7 @@ import Spinner from "~/components/Spinner";
 import Timer from "~/components/Timer";
 import RandomWordGenerator from "~/components/WordArtGenerator";
 import recaptcha from "../assets/recaptcha.png";
+import robodance from "../assets/robodance.gif";
 
 type Stage =
   | "start"
@@ -16,15 +17,14 @@ type Stage =
   | "hiddenimage"
   | "steves"
   | "loveai"
-  | "pointing";
+  | "pointing"
+  | "done";
 
 const Main = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [stage, setStage] = useState<Stage>("start");
   const [loading, setLoading] = useState(false);
-
-  console.log("email", email);
 
   return (
     <main className="w-full h-screen flex items-center justify-center">
@@ -54,7 +54,9 @@ const Main = () => {
         </button>
       </div>
 
-      {stage !== "start" && <Timer sendBackToStart={() => setStage("start")} />}
+      {stage !== "start" && stage !== "done" && (
+        <Timer sendBackToStart={() => setStage("start")} />
+      )}
 
       {stage === "click" && (
         <Modal>
@@ -105,7 +107,23 @@ const Main = () => {
 
       {stage === "pointing" && (
         <Modal>
-          <PointAtCoolPerson />
+          <PointAtCoolPerson goToNextStage={() => setStage("done")} />
+        </Modal>
+      )}
+
+      {stage === "done" && (
+        <Modal>
+          <div className="w-full flex items-center justify-center flex-col font-robot max-w-[450px]">
+            <h1 className="mb-4 font-bold text-xl text-center">
+              You fell into our trap, puny human!
+            </h1>
+            <img src={robodance} className="h-[200px] py-4" />
+            <p className="text-sm mb-2 text-center">
+              You are now registered as a human in our global database. A robot
+              is on its way to steal your job.
+            </p>
+            <p className="text-sm text-center">Sucks to be you I guess!</p>
+          </div>
         </Modal>
       )}
     </main>

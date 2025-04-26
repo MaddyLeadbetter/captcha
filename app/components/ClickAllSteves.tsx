@@ -69,6 +69,9 @@ const ClickAllSteves = ({ goToNextStage }: { goToNextStage: () => void }) => {
           </button>
         ))}
       </div>
+      <p className="text-center text-lg font-bold mb-6">
+        Select all the images that contain a Steve.
+      </p>
       <button
         onClick={goToNextStage}
         disabled={!hasCorrectAnswer}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const TIME_TO_FINISH = 1000;
+const TIME_TO_FINISH = 60;
 
 const Timer = ({ sendBackToStart }: { sendBackToStart: () => void }) => {
   const [seconds, setSeconds] = useState(0);

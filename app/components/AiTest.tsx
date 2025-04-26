@@ -95,7 +95,7 @@ const AiTest = ({ goToNextStage }: { goToNextStage: () => void }) => {
               !believeInAIAnswer.includes("awesome") &&
               !believeInAIAnswer.includes("good") &&
               !believeInAIAnswer.includes("amazing") &&
-              !believeInAIAnswer.includes("is great");
+              !believeInAIAnswer.includes("great");
             if (hasCorrectAnswers) {
               goToNextStage();
             } else {
