@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/captcha/static/css/main.44b82b18.css",
+    "main.js": "/captcha/static/js/main.64d67533.js",
+    "static/media/seth.png": "/captcha/static/media/seth.200e8eb2b7d64271c836.png",
+    "static/media/steve5.png": "/captcha/static/media/steve5.86487f2e51f3158e796a.png",
+    "static/media/santa.png": "/captcha/static/media/santa.2e95d74582ded3faf077.png",
+    "static/media/dave.jpg": "/captcha/static/media/dave.9471e029162c66f4cca4.jpg",
+    "static/media/steve8.jpg": "/captcha/static/media/steve8.5698a7c113e5283ca1be.jpg",
+    "static/media/steve6.png": "/captcha/static/media/steve6.b2d999b8105a30243e52.png",
+    "static/media/downleft.png": "/captcha/static/media/downleft.32146ff1e245e9758e03.png",
+    "static/media/steve3.jpg": "/captcha/static/media/steve3.51b03bc5a1c586459457.jpg",
+    "static/media/robodance.gif": "/captcha/static/media/robodance.c70e975089d889b7b8ec.gif",
+    "static/media/spongebob.png": "/captcha/static/media/spongebob.62b83ae1655ebfc85741.png",
+    "static/media/waldo.png": "/captcha/static/media/waldo.a03315ce42126a99c1ee.png",
+    "static/media/upleft.jpg": "/captcha/static/media/upleft.eb5a6875e6e3840af143.jpg",
+    "static/media/dwayne.jpg": "/captcha/static/media/dwayne.fb9457e187445c165177.jpg",
+    "static/media/right.png": "/captcha/static/media/right.08dbcc69b8c8c0265741.png",
+    "static/media/steve4.jpg": "/captcha/static/media/steve4.3c7b0f8d122fb328fa05.jpg",
+    "static/media/steve1.jpg": "/captcha/static/media/steve1.2da823dd1d597f6a6764.jpg",
+    "static/media/steve7.jpg": "/captcha/static/media/steve7.354b4db285f55570e33d.jpg",
+    "static/media/up.jpg": "/captcha/static/media/up.9d7f6e53a0489d60e684.jpg",
+    "static/media/simon.jpg": "/captcha/static/media/simon.b99964371f5301913348.jpg",
+    "static/media/right.jpg": "/captcha/static/media/right.359bafeef35d268db8b0.jpg",
+    "static/media/steve2.png": "/captcha/static/media/steve2.7b38b8c2b134b306049c.png",
+    "static/media/bugs.jpg": "/captcha/static/media/bugs.a3b42c94c18982aa7c27.jpg",
+    "static/media/recaptcha.png": "/captcha/static/media/recaptcha.5e994839177f4e82d637.png",
+    "static/media/forward.png": "/captcha/static/media/forward.89c96c712e9661f35b60.png",
+    "static/media/down.jpg": "/captcha/static/media/down.6fb8e94309485918be69.jpg",
+    "static/media/camera.png": "/captcha/static/media/camera.e9a08990b9e7fbc0e262.png",
+    "static/media/upright.png": "/captcha/static/media/upright.db6f8f9066269eee1fe4.png",
+    "index.html": "/captcha/index.html",
+    "main.44b82b18.css.map": "/captcha/static/css/main.44b82b18.css.map",
+    "main.64d67533.js.map": "/captcha/static/js/main.64d67533.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44b82b18.css",
+    "static/js/main.64d67533.js"
+  ]
+}
