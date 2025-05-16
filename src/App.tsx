@@ -1,14 +1,14 @@
+import AiTest from "./components/AiTest";
+import ClickAllSteves from "./components/ClickAllSteves";
+import FindWaldo from "./components/FindWaldo";
+import Modal from "./components/Modal";
+import PointAtCoolPerson from "./components/PointAtCoolPerson";
+import Spinner from "./components/Spinner";
+import Timer from "./components/Timer";
+import RandomWordGenerator from "./components/WordArtGenerator";
 import { useState } from "react";
-import AiTest from "~/components/AiTest";
-import ClickAllSteves from "~/components/ClickAllSteves";
-import FindWaldo from "~/components/FindWaldo";
-import Modal from "~/components/Modal";
-import PointAtCoolPerson from "~/components/PointAtCoolPerson";
-import Spinner from "~/components/Spinner";
-import Timer from "~/components/Timer";
-import RandomWordGenerator from "~/components/WordArtGenerator";
-import recaptcha from "../assets/recaptcha.png";
-import robodance from "../assets/robodance.gif";
+import recaptcha from "./assets/recaptcha.png";
+import robodance from "./assets/robodance.gif";
 
 type Stage =
   | "start"
@@ -20,7 +20,7 @@ type Stage =
   | "pointing"
   | "done";
 
-const Main = () => {
+const App = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [stage, setStage] = useState<Stage>("start");
@@ -73,7 +73,7 @@ const Main = () => {
           />
           <p className="text-lg text-center mr-6">I am not a robot</p>
           {loading && <Spinner />}
-          <img className="h-[48px] w-[48px]" src={recaptcha} />
+          <img className="h-[48px] w-[48px]" src={recaptcha} alt="recaptcha" />
         </Modal>
       )}
 
@@ -117,7 +117,11 @@ const Main = () => {
             <h1 className="mb-4 font-bold text-xl text-center">
               You fell into our trap, puny human!
             </h1>
-            <img src={robodance} className="h-[200px] py-4" />
+            <img
+              src={robodance}
+              className="h-[200px] py-4"
+              alt="dancing robot"
+            />
             <p className="text-sm mb-2 text-center">
               You are now registered as a human in our global database. A robot
               is on its way to steal your job.
@@ -130,4 +134,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default App;

@@ -37,7 +37,7 @@ const PointAtCoolPerson = ({
       <h1 className="text-2xl font-bold text-center mb-4">
         Please point at the coolest person in the room.
       </h1>
-      <img src={arrows[currentArrow]} className="h-[200px] p-4" />
+      <img src={arrows[currentArrow]} className="h-[200px] p-4" alt="" />
       <div className="flex gap-2 w-full">
         <button
           onClick={() => {

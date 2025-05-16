@@ -65,7 +65,7 @@ const ClickAllSteves = ({ goToNextStage }: { goToNextStage: () => void }) => {
             )}
             onClick={() => handleImageClick(index)}
           >
-            <img src={src} className="w-full h-full object-cover" />
+            <img src={src} className="w-full h-full object-cover" alt="steve" />
           </button>
         ))}
       </div>
